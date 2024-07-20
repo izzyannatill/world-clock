@@ -42,30 +42,8 @@ function updateCity (event) {
     "A"
   )}</small></div>
   </div>
+  <a href="/">All Cities</a>
   `;
-   if (cityTimeZone === "selects") {
-    citiesElement.innerHTML = ` <div class="city" id="los-angeles">
-        <div>
-<h2>Los Angeles<span class="emoji">🇺🇸</span></h2>
-<div class="date"></div>
-</div>
-<div class="time"></div>
-    </div>
-     <div class="city" id="sydney">
-        <div>
-<h2>Sydney<span class="emoji">🇦🇺</span></h2>
-<div class="date"></div>
-</div>
-<div class="time"></div>
-    </div>
-        <div class="city" id="paris">
-        <div>
-<h2>Paris<span class="emoji">🇫🇷</span></h2>
-<div class="date"></div>
-</div>
-<div class="time"></div>
-    </div>`
- }
     }
 
 updateTime();
