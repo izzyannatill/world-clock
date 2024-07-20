@@ -26,6 +26,9 @@ sydTime.innerHTML = moment().tz("Australia/Sydney").format("HH:mm:ss[<small>]A[<
 
 function updateCity (event) {
  let cityTimeZone = event.target.value;
+ if (cityTimeZone === "local") {
+    cityTimeZone = moment.tz.guess();
+ }
  let cityTime = moment().tz(cityTimeZone);
  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
  let citiesElement = document.querySelector("#cities");
@@ -42,8 +45,8 @@ function updateCity (event) {
   `;
     }
 
-let dropdownSelect = document.querySelector("#dropdown");
-dropdownSelect.addEventListener("change", updateCity);
-
 updateTime();
 setInterval(updateTime, 1000);
+
+let dropdownSelect = document.querySelector("#dropdown");
+dropdownSelect.addEventListener("change", updateCity);
