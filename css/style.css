@@ -1,8 +1,9 @@
 body {
     background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/476/original/lukasz-lada-LtWFFVi1RXQ-unsplash_%281%29.jpg?1721485275');
-        background-repeat: no-repeat;
+    width: 100vw;
+        height: 100vh;
         background-size: cover;
-        background-position: center;
+        background-position: center top;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,12 +12,17 @@ h1 {
     font-size: 35px;
 }
 
+a {
+    color: black;
+}
+
 h2 {
     font-size: 35px;
     margin: 10px 0;
 }
 
 select {
+    background: rgba(244, 223, 180, 0.6);
     font-size: 17px;
     display: block;
     text-align: center;
